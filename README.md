@@ -8,7 +8,7 @@ The effects of salinity have been studied extensively in the lower Colorado Rive
 Amanda Braun MEM/MBA, Principal Investigator, Duke University, amanda.m.braun@duke.edu, 
 
 ## Keywords
-**Specific Conductance** - measure a water sample's ability to conduct electricity. A water's conductivity depends on the total number of ions in it, so it is a proxy for how many salts are in the water sample, and generally saltier water has a higher specific conductance. Specificic conductance reflects the total amount of ions in te water sample. The unit of specific conductance in freshwater is microsiemens per centimeter at 25 degrees Celsius (77 degrees Faranheit)
+**Specific Conductance** - measure a water sample's ability to conduct electricity. A water's conductivity depends on the total number of ions in it, so it is a proxy for how many salts are in the water sample, and generally saltier water has a higher specific conductance. Specificic conductance reflects the total amount of ions in te water sample. The unit of specific conductance in freshwater is microsiemens per centimeter at 25 degrees Celsius.
 
 More information on Specific Conductance published by USGS can be found at:  https://pubs.usgs.gov/tm/09/a6.3/tm9-a6_3.pdf
 
@@ -36,10 +36,12 @@ The "Processed" data folder WILL contains processed data in CSV format for the s
 ## Metadata
 **Specific Conductance Columns** 
   *Activity Start Date*: The date the sample was collected. 
-      Data Class: Date  
+  
+  Data Class: Date  
 
   *Conductance:* Reported in uS/cm (microSeimins per centimeter). 
-       Data Class: Numeric
+      
+   Data Class: Numeric
 
   *LocationIdentifier:* USGS Colorado Water Science Center site identification number.
       Respults: USGS-09072550; USGS-09073300; USGS-09073400; USGS-09076520; USGS-09081000;USGS-09085000;      
