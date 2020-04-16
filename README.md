@@ -23,7 +23,7 @@ This surface water data was collected by the United States Geological Survey, US
 
 *Specific conductance* data was collected 45 sites with 2148 samples results from 1949 to 2020. 
 
-*pH* data was collected from 43 sites within the 7 HUCs.
+*pH* data was collected from 43 sites within the 7 HUCs, reported in total standard units. 
 
 *Alkalinity* data was collected from 40 sites with 478 sample results within the HUCs. 
 
@@ -31,15 +31,16 @@ This surface water data was collected by the United States Geological Survey, US
 Within the RFR There is a "Data"" folder containing a "Raw" data folder and a "Processed" data folder. 
 The "Raw" data folder contains raw data in CSV format for the seven HUCS of the Roaring Fork River watershed for alkalinity named "RoaringForkAlkalinityRaw", pH named "RoaringForkpHRaw", and specific conductance named "RoaringForkSpecificConductanceRaw".
 
-The "Processed" data folder WILL contains processed data in CSV format for the seven HUCS of the Roaring Fork River watershed for alkalinity named "RoaringForkAlkalinityProcessed", pH named "RoaringForkpHProcessed", and specific conductance named "RoaringForkSpecificConductanceProcessed".
+The "Processed" data folder WILL contains processed data in CSV format for the seven HUCS of the Roaring Fork River watershed for alkalinity will be named "X", pH named "USGS.SC.data", and specific conductance is currently named "USGS.SC.data".
 
 ## Metadata
-**Specific Conductance Columns** 
+**Specific Conductance** 
+**Columns**
   *Activity Start Date*: The date the sample was collected. 
   
   Data Class: Date  
 
-  *Conductance:* Reported in uS/cm (microSeimins per centimeter). 
+  *ResultMeasureValue:* Conductance reported in uS/cm (microSeimins per centimeter). 
       
    Data Class: Numeric
 
@@ -65,7 +66,34 @@ The "Processed" data folder WILL contains processed data in CSV format for the s
       Results:Routine sample, Snowmelt, Under ice cover, Drought, Not applicable, Regulated flow, Spring   
          breakup
       Data class: Character Vector 
+      
+**pH**
+
+**Columns**
+
+*Activity Identifier:* Sample identification provided to the National Water Information System. 
+Data Class: 
+
+*Activity Start Date:* Date the sample was collected.
+Data Class:
+
+*Monitoring Location Identifier:* USGS site of the sample collected. 
+Data Class:
+
+*HydrologicCondition:* The stage of the river in which the water sample was collected. 
+      Results: Not determined, Stable normal stage, Rising stage; Stable, low stage; Stable, high stage;
+         Falling stage, Peak stage, Not applicable.
+      Data Class: Character Vector 
+
+*Hydrologic Event:* The climactic condition of the water sampled.
+      Results:Routine sample, Snowmelt, Under ice cover, Drought, Not applicable, Regulated flow, Spring   
+         breakup
+      Data class: Character Vector 
+
+*Measure:* pH of the measured sample. 
+
+*Sample Aquifer:* A few of the samples have the type of aquifer the surrounding geology is a part of. Results: Alluvium, Flood Plain; Maroon Formation; Pennsylvanian System; Permian-Pennsylvanian Systems; Quaternary System; Valley-Fill Deposits.
 
 ## Quality assurance/quality  
-Data samples that were lab tested replicas of field tested samples were removed from the alkalinity and specific conductance raw data. 
+Data samples that were "quality control sample-field replicate" lab tested  were removed from the alkalinity and specific conductance and pH raw data. 
 
