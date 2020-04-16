@@ -14,7 +14,7 @@ More information on Specific Conductance published by USGS can be found at:  htt
 
 **pH** - Expressing the acidity or alkalinity of a solution on a logarithmic scale on which 7 is neutral, lower values are more acidic and higher values more alkaline. The pH is equal to −log10 c, where c is the hydrogen ion concentration in moles per liter. Most freshwater rivers have a neutral pH (close to (7) dependent on the watershed geology, and most organisms cannot survive under a pH of 6. 
 
-**Alakalinity** - The capacity of water to resist changes in pH that would make the water more acidic. Total alkalinity is measured by the amount of acid needed to bring the awater sample to a pH of 4.2. At this pH all the alkaline compounds in the sample are "used up." The result is reported as milligrams per liter (mg/l) of calcium carbonate (CaCO3) .
+**Alakalinity** - The capacity of water to resist changes in pH that would make the water more acidic. Total alkalinity is measured by the amount of acid needed to bring the awater sample to a pH of 4.2. At this pH all the alkaline compounds in the sample are "used up." Alakalinity is reported as milligrams per liter (mg/l) of calcium carbonate (CaCO3) .
 
 
 ## Database Information
