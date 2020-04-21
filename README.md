@@ -21,7 +21,24 @@ More information on Specific Conductance published by USGS can be found at:  htt
 
 This surface water data was collected by the United States Geological Survey, USGS Colorado Water Science Center and accessed via National Water Quality Monitoring Council's Water Quality Portal <https://www.waterqualitydata.us/> on April 14th, 2020. The data was pulled from the National Water Information System (NWIS) database for seven 12-digit HUCs that encompoass the length of the Roaring Fork River: 140100040102, 140100040104,140100040106,140100040602,140100040603,140100040802, and 140100041003.
 
-*Specific conductance* data was collected 45 sites with 2148 samples results from 1949 to 2020. 
+The 7 HUCs are divided into upper, middle and outlet portions of the Roaring Fork River to enable analysis of salinity along the length of the river. 
+
+*Headwaters*
+Headwaters Roaring Fork River - 140100040102
+Weller Lake-Roaring Fork River - 140100040104
+
+*Upper Roaring Fork HUCs*
+Roaring Fork River above Aspen - 140100040106
+Brush Creek-Roaring Fork River - 140100040602
+
+*Middle Roaring Fork HUCs*
+Dry Woody Creek-Roaring Fork River - 140100040603
+Blue Creek-Roaring Fork River - 140100040802
+
+*Outlet Roaring Fork HUCs*
+Outlet Roaring Fork River - 140100041003
+
+*Specific conductance* data was collected 45 sites within the 7 HUCs with 2148 samples results. 
 
 *pH* data was collected from 43 sites within the 7 HUCs, reported in total standard units. 
 
@@ -31,7 +48,7 @@ This surface water data was collected by the United States Geological Survey, US
 Within the RFR There is a "Data"" folder containing a "Raw" data folder and a "Processed" data folder. 
 The "Raw" data folder contains raw data in CSV format for the seven HUCS of the Roaring Fork River watershed for alkalinity named "RoaringForkAlkalinityRaw", pH named "RoaringForkpHRaw", and specific conductance named "RoaringForkSpecificConductanceRaw".
 
-The "Processed" data folder WILL contains processed data in CSV format for the seven HUCS of the Roaring Fork River watershed for alkalinity will be named "X", pH named "USGS.SC.data", and specific conductance is currently named "USGS.SC.data".
+The "Processed" data folder WILL contains processed data in CSV format for the seven HUCS of the Roaring Fork River watershed for alkalinity named "RoaringForkAlkalinityProcessed", pH named "RoaringForkpHProcessed", and specific conductance named "RoaringForkSpecificConductanceProcessed".
 
 ## Metadata
 **Specific Conductance** 
@@ -40,7 +57,7 @@ The "Processed" data folder WILL contains processed data in CSV format for the s
   
   Data Class: Date  
 
-  *ResultMeasureValue:* Conductance reported in uS/cm (microSeimins per centimeter). 
+  *Conductance:* Reported in uS/cm (microSeimins per centimeter). 
       
    Data Class: Numeric
 
@@ -88,11 +105,13 @@ Data Class:
 *Hydrologic Event:* The climactic condition of the water sampled.
       Results:Routine sample, Snowmelt, Under ice cover, Drought, Not applicable, Regulated flow, Spring   
          breakup
-      Data class: Character Vector 
+      Data Class: Character Vector 
 
 *Measure:* pH of the measured sample. 
+Data Class: 
 
 *Sample Aquifer:* A few of the samples have the type of aquifer the surrounding geology is a part of. Results: Alluvium, Flood Plain; Maroon Formation; Pennsylvanian System; Permian-Pennsylvanian Systems; Quaternary System; Valley-Fill Deposits.
+Data Class: 
 
 ## Quality assurance/quality  
 Data samples that were "quality control sample-field replicate" lab tested  were removed from the alkalinity and specific conductance and pH raw data. 
