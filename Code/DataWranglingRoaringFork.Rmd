@@ -1,0 +1,151 @@
+---
+title: "RoaringForkCode"
+author: "Amanda Braun"
+date: "4/16/2020"
+output: pdf_document
+geometry: margin=2.54cm
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+getwd()
+library(tidyverse)
+library(knitr)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+
+##Reading CSV and Data Exploration for Specific Conductance Data 
+
+USGS.SC.data <- read.csv("./Data/Raw/RoaringForkSpecificConductanceRaw.csv")
+view(USGS.SC.data)
+colnames(USGS.SC.data)
+class(USGS.SC.data)
+
+#ok with leaving column names as they are for now, they are explanatory but just alot need to be removed
+###Use this later to rename the columns 
+colnames(USGS.flow.data) <- c("agency_cd", "site_no", "datetime")
+
+str(USGS.SC.data) #numberic returns NA values if there is blank, character or factor blank, I think this means data structure 
+dim(USGS.SC.data) 
+length(USGS.SC.data) 
+nrow(USGS.SC.data) #number of rows 
+
+head(USGS.SC.data) #default is first 6 rows of the data can also use tail, but why would you? 
+USGS.flow.data[30000:30005, c(3, 8, 14)] #rows 30000 to 30005, missed the rest 
+
+class(USGS.SC.data$ActivityStartDate) 
+#ActivityStartDate is a factor - needs to be changed to Date 
+class(USGS.SC.data$MonitoringLocationIdentifier) # factor 
+
+
+
+
+summary(USGS.SC.data$ResultMeasureValue) 
+#statistical summary 
+#max is 2600, need to edit that value 
+
+```
+
+```{r}
+##Reading CSV and Data Exploration for pH Data 
+USGS.pH.data <- read.csv("./Data/Raw/RoaringForkpHRaw.csv")
+view(USGS.pH.data)
+colnames(USGS.pH.data)
+class(USGS.pH.data)
+
+#ok with leaving column names as they are for now, they are explanatory but just alot need to be removed
+###Use this later to rename the columns 
+colnames(USGS.flow.data) <- c("agency_cd", "site_no", "datetime")
+
+str(USGS.pH.data) #numberic returns NA values if there is blank, character or factor blank, I think this means data structure 
+dim(USGS.pH.data) 
+length(USGS.pH.data) 
+nrow(USGS.pH.data) #number of rows 
+
+head(USGS.pH.data) #default is first 6 rows of the data can also use tail, but why would you? 
+
+class(USGS.pH.data$ActivityStartDate) 
+#ActivityStartDate is a factor - needs to be changed to Date 
+class(USGS.pH.data$MonitoringLocationIdentifier) # factor 
+
+
+
+
+summary(USGS.pH.data$ResultMeasureValue) 
+
+```
+
+```{r}
+##Manipulating Data for Specific Conductance 
+today <- Sys.Date()
+
+USGS.SC.data$ActivityStartDate <- as.Date(USGS.SC.data$ActivityStartDate, format = "%Y-%m-%d") 
+
+class(USGS.SC.data$ActivityStartDate)
+
+#I do have dates prior to 1969
+
+create.early.dates <- (function(d) {
+       paste0(ifelse(d > 191231,"19","20"),d)
+       })
+
+USGS.SC.data$ActivityStartDate <- create.early.dates(USGS.SC.data$ActivityStartDate)
+
+class(USGS.SC.data$ResultMeasureValue)
+
+class(USGS.SC.data$MonitoringLocationIdentifier)
+
+```
+
+```{r}
+##Manipulating Data for pH
+today <- Sys.Date()
+
+USGS.pH.data$ActivityStartDate <- as.Date(USGS.pH.data$ActivityStartDate, format = "%Y-%m-%d") 
+
+class(USGS.SC.data$ActivityStartDate)
+
+#I do have dates prior to 1969
+
+create.early.dates <- (function(d) {
+       paste0(ifelse(d > 191231,"19","20"),d)
+       })
+
+USGS.SC.data$ActivityStartDate <- create.early.dates(USGS.SC.data$ActivityStartDate)
+
+class(USGS.SC.data$ResultMeasureValue)
+
+class(USGS.SC.data$MonitoringLocationIdentifier)
+
+```
+
+
+```{r}
+write.csv(USGS.SC.data, file = "./Data/Processed/USGS_Site02085000_Flow_Processed.csv", row.names=FALSE)
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
