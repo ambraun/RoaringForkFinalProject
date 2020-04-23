@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.13)  20 APR 2020 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.13)  21 APR 2020 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,11 +691,11 @@ Package pdftex.def Info: "Analysis.RoaringFork_files/figure-latex/""unnamed-chu
 nk-4-1".pdf  used on input line 211.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 227.
+(Font)              <10> on input line 228.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 227.
+(Font)              <7> on input line 228.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 227.
+(Font)              <5> on input line 228.
 [2] [3 <./Analysis.RoaringFork_files/figure-latex/unnamed-chunk-4-1.pdf>]
 <"Analysis.RoaringFork_files/figure-latex/""pressure-1".pdf, id=45, 469.755pt x
  325.215pt>
@@ -703,14 +703,14 @@ File: "Analysis.RoaringFork_files/figure-latex/""pressure-1".pdf Graphic file (
 type pdf)
 <use "Analysis.RoaringFork_files/figure-latex/""pressure-1".pdf>
 Package pdftex.def Info: "Analysis.RoaringFork_files/figure-latex/""pressure-1"
-.pdf  used on input line 254.
+.pdf  used on input line 255.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
 [4 <./Analysis.RoaringFork_files/figure-latex/pressure-1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
 (./Analysis.RoaringFork.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `Analysis.RoaringFork.out' has not changed.
 (rerunfilecheck)             Checksum: 375CCB0C7839B6239EC131899440DF49;219.
  ) 
@@ -731,7 +731,7 @@ ve/2019basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/201
 -dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2019basic/texmf-dist
 /fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019basic/texmf-dist/font
 s/type1/public/lm/lmtti10.pfb>
-Output written on Analysis.RoaringFork.pdf (4 pages, 215529 bytes).
+Output written on Analysis.RoaringFork.pdf (4 pages, 216093 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
